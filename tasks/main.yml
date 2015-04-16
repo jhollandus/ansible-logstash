@@ -4,3 +4,6 @@
   with_items:
     - 01-base-input
     - 50-base-output
+
+- name: Create default Logstash Upstart config
+  copy: src=logstash.conf dest=/etc/init/logstash.conf owner=root group=root
