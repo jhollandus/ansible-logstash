@@ -1,0 +1,6 @@
+---
+- name: Copy default logstash configurations
+  template: src={{ item }}.j2 dest=/etc/logstash/conf.d/{{ item }}.conf
+  with_items:
+    - 01-base-input
+    - 50-base-output

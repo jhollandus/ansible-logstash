@@ -1,0 +1,12 @@
+input {
+  file {
+    path => "/var/log/cloud-init-output.log"
+    start_position => "beginning"
+    type => "cloud-init"
+  }
+  file {
+    path => "/var/log/auth.log"
+    start_position => "beginning"
+    type => "auth"
+  }
+}
