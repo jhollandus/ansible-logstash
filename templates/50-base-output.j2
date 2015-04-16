@@ -1,6 +1,6 @@
 output {
   elasticsearch_http {
-    host => "{{logstash_elasticsearch_host}}"
+    host => "{{ logstash_elasticsearch_host }}"
   }
   stdout {
     codec => rubydebug
