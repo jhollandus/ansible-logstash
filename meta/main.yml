@@ -6,3 +6,4 @@ galaxy_info:
   min_ansible_version: 1.2
 dependencies:
   - azavea.logstash,0.1.0,azavea.logstash
+  - git+git@github.com:PeopleNet/ansible-aws-scripts.git,1.0.0,aws-scripts
