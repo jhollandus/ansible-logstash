@@ -1,2 +1,2 @@
 ---
-logstash_elasticsearch_host: elasticsearch.palantair.peoplenet.io
+logstash_elasticsearch_host: elasticsearch.palantir.peoplenet.io
