@@ -1,4 +1,9 @@
 ---
+- name: Ensure logstash service directory exists
+  file:
+    path: /etc/service/logstash
+    state: directory
+
 - name: Copy default logstash configurations
   template: src={{ item }}.j2 dest=/etc/logstash/conf.d/{{ item }}.conf
   with_items:
